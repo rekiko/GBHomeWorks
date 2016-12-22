@@ -7,8 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <math.h>
-int myfunction(int firstval, int secondval, int calctype){
+
+typedef enum{
+    addition,
+    subtraction,
+    multiplication,
+    division
+} CalculationType;
+
+int myfunction(int firstval, int secondval, CalculationType calctype){
     int result;
     char sign;
     switch (calctype) {
@@ -47,12 +54,7 @@ int myfact(int value){
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        typedef enum{
-            addition,
-            subtraction,
-            multiplication,
-            division
-        } CalculationType;
+        
         
         int res = myfunction(4, 5, addition);
         res = myfunction(3, 6, subtraction);
