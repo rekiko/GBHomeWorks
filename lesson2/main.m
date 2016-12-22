@@ -62,7 +62,7 @@ int main(int argc, const char * argv[]) {
         res = myfunction(1, 5, division);
         NSUInteger quad;
         int iteration=0;
-        for (int i=1; i<21; i++) {
+        for (int i=1; i<20; i++) {
             quad = quadMultiplier(i);
             iteration++;
             if (quad == 16){
