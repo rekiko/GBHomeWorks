@@ -43,7 +43,7 @@ int myfunction(int firstval, int secondval, CalculationType calctype){
 }
 
 NSUInteger quadMultiplier(NSUInteger value){ // unsigned long
-    return pow(value, 4);
+    return value*4;
 }
 int myfact(int value){
     if (value <= 1)
@@ -66,7 +66,7 @@ int main(int argc, const char * argv[]) {
             quad = quadMultiplier(i);
             iteration++;
             if (quad == 16){
-                NSLog(@"Результат %i^4=16 выходим из цикла..",i);
+                NSLog(@"Результат %i*4=16 выходим из цикла..",i);
                 break;
             }
             if (quad%3 == 0){
